@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SocialBoost - SMM Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        🚀 SocialBoost
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <button class="login-btn" onclick="openLogin()">
+        Login / Register
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Social Media Marketing Panel</h1>
+
+        <p>
+            Manage your social media marketing services
+            from one simple dashboard.
+        </p>
+
+        <button onclick="scrollToServices()">
+            Explore Services
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="services-section">
+
+    <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>
+            Select a service and create your order.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+        <!-- Instagram -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                📸
+            </div>
+
+            <h3>Instagram Followers</h3>
+
+            <p>
+                Marketing service for your
+                authorized Instagram account.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹8 / 100
+                </span>
+
+                <button onclick="selectService('Instagram Followers', 8)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ❤️
+            </div>
+
+            <h3>Instagram Likes</h3>
+
+            <p>
+                Marketing service for authorized
+                posts.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹1 / 100
+                </span>
+
+                <button onclick="selectService('Instagram Likes', 1)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- YouTube -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ▶️
+            </div>
+
+            <h3>YouTube Views</h3>
+
+            <p>
+                Marketing service for your
+                authorized YouTube content.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹12 / 100
+                </span>
+
+                <button onclick="selectService('YouTube Views', 8)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                👍
+            </div>
+
+            <h3>YouTube Likes</h3>
+
+            <p>
+                Marketing service for authorized
+                YouTube content.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹15 / 100
+                </span>
+
+                <button onclick="selectService('YouTube Likes', 15)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                👥
+            </div>
+
+            <h3>YouTube Subscribers</h3>
+
+            <p>
+                Marketing service for your
+                authorized YouTube channel.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹200 / 100
+                </span>
+
+                <button onclick="selectService('YouTube Subscribers', 200)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Facebook -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                👥
+            </div>
+
+            <h3>Facebook Page Likes</h3>
+
+            <p>
+                Marketing service for your
+                authorized Facebook page.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹6 / 100
+                </span>
+
+                <button onclick="selectService('Facebook Page Likes', 6)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💙
+            </div>
+
+            <h3>Facebook Post Likes</h3>
+
+            <p>
+                Marketing service for authorized
+                Facebook content.
+            </p>
+
+            <div class="service-bottom">
+
+                <span>
+                    ₹8 / 100
+                </span>
+
+                <button onclick="selectService('Facebook Post Likes', 8)">
+                    Order
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order-section" id="order">
+
+    <div class="order-container">
+
+        <h2>Create New Order</h2>
+
+        <p class="small-text">
+            Login is required only when you submit the order.
+        </p>
+
+
+        <label>
+            Service
+        </label>
+
+        <select id="service">
+
+            <option value="">
+                Select Service
+            </option>
+
+            <option value="Instagram Followers">
+                Instagram Followers
+            </option>
+
+            <option value="Instagram Likes">
+                Instagram Likes
+            </option>
+
+            <option value="YouTube Views">
+                YouTube Views
+            </option>
+
+            <option value="YouTube Likes">
+                YouTube Likes
+            </option>
+
+            <option value="YouTube Subscribers">
+                YouTube Subscribers
+            </option>
+
+            <option value="Facebook Page Likes">
+                Facebook Page Likes
+            </option>
+
+            <option value="Facebook Post Likes">
+                Facebook Post Likes
+            </option>
+
+        </select>
+
+
+        <label>
+            Profile / Post URL
+        </label>
+
+        <input
+            type="url"
+            id="targetUrl"
+            placeholder="https://example.com/your-profile"
+        >
+
+
+        <label>
+            Quantity
+        </label>
+
+        <input
+            type="number"
+            id="quantity"
+            min="100"
+            value="100"
+            oninput="calculatePrice()"
+        >
+
+
+        <div class="price">
+
+            Total Price:
+
+            <strong id="totalPrice">
+                ₹1.00
+            </strong>
+
+        </div>
+
+
+        <button class="place-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+
+        <p id="orderMessage"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeLogin()">
+            ×
+        </button>
+
+        <h2>Login / Register</h2>
+
+        <p class="modal-subtitle">
+            Login to continue your order
+        </p>
+
+        <!-- Google Login -->
+
+        <button class="google-btn" onclick="googleLogin()">
+            <span>G</span>
+            Continue with Google
+        </button>
+
+        <p
+            id="loginMessage"
+            class="login-message"
+        ></p>
+    </div>
+</div>
+        <!-- Google
+
+        <button class="google-btn" onclick="googleLogin()">
+
+            <span>
+                G
+            </span>
+
+            Continue with Google
+
+        </button>
+
+
+        <div class="divider">
+            <span>OR</span>
+        </div> -->
+
+
+        <!-- Phone
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter phone number"
+        >
+
+
+        <button
+            class="otp-btn"
+            onclick="sendOTP()"
+        >
+            Continue with Phone
+        </button>
+
+
+        <div
+            id="otpArea"
+            class="otp-area"
+        >
+
+            <input
+                type="text"
+                id="otp"
+                placeholder="Enter OTP"
+                maxlength="6"
+            >
+
+            <button onclick="verifyOTP()">
+                Verify OTP
+            </button>
+
+        </div>
+
+
+        <p
+            id="loginMessage"
+            class="login-message"
+        ></p>
+
+    </div>
+
+</div> -->
+
+
+<!-- ================= USER PANEL =================
+
+<section
+    id="userPanel"
+    class="user-panel"
+>
+
+    <div class="panel-header">
+
+        <h2>
+            My Dashboard
+        </h2>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+
+    <div class="dashboard-cards">
+
+        <div>
+            <span>Wallet Balance</span>
+            <strong id="balance">
+                ₹500.00
+            </strong>
+        </div>
+
+        <div>
+            <span>Total Orders</span>
+            <strong id="totalOrders">
+                0
+            </strong>
+        </div>
+
+        <div>
+            <span>Completed</span>
+            <strong id="completedOrders">
+                0
+            </strong>
+        </div>
+
+    </div>
+
+
+    <div class="orders-box">
+
+        <h3>
+            My Orders
+        </h3>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            ID
+                        </th>
+
+                        <th>
+                            Service
+                        </th>
+
+                        <th>
+                            Quantity
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="ordersTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- ================= USER DASHBOARD ================= -->
+
+<section id="userPanel" class="user-panel">
+
+    <!-- HAMBURGER BUTTON -->
+
+    <button
+        id="dashboardMenuBtn"
+        class="dashboard-menu-btn"
+        onclick="toggleDashboardMenu()"
+        aria-label="Open Dashboard"
+    >
+        ☰
+    </button>
+
+
+    <!-- SIDEBAR -->
+
+    <aside
+        id="dashboardSidebar"
+        class="dashboard-sidebar"
+    >
+
+        <div class="dashboard-sidebar-header">
+
+            <h2>
+                🚀 SocialBoost
+            </h2>
+
+            <button
+                class="sidebar-close"
+                onclick="toggleDashboardMenu()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="dashboard-title">
+            My Dashboard
+        </div>
+
+
+        <nav class="dashboard-nav">
+
+            <button onclick="dashboardHome()">
+                🏠
+                <span>Home</span>
+            </button>
+
+
+            <button onclick="dashboardServices()">
+                🛒
+                <span>Services</span>
+            </button>
+
+
+            <button onclick="dashboardOrders()">
+                📦
+                <span>My Orders</span>
+            </button>
+
+
+            <button onclick="dashboardWallet()">
+                💰
+                <span>Wallet</span>
+            </button>
+
+
+            <button onclick="dashboardProfile()">
+                👤
+                <span>Profile</span>
+            </button>
+
+
+            <button onclick="dashboardHelp()">
+                🆘
+                <span>Help</span>
+            </button>
+
+
+            <button
+                class="dashboard-logout"
+                onclick="logout()"
+            >
+                🚪
+                <span>Logout</span>
+            </button>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- DARK OVERLAY -->
+
+    <div
+        id="dashboardOverlay"
+        class="dashboard-overlay"
+        onclick="toggleDashboardMenu()"
+    ></div>
+
+
+    <!-- DASHBOARD CONTENT -->
+
+    <main class="dashboard-content">
+
+
+        <!-- TOP BAR -->
+
+        <div class="dashboard-topbar">
+
+            <div>
+
+                <h2>
+                    My Dashboard
+                </h2>
+
+                <p id="dashboardWelcome">
+                    Welcome to SocialBoost
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DASHBOARD CARDS -->
+
+        <div class="dashboard-cards">
+
+            <div>
+
+                <span>
+                    Wallet Balance
+                </span>
+
+                <strong id="balance">
+                    ₹500.00
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Total Orders
+                </span>
+
+                <strong id="totalOrders">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Completed
+                </span>
+
+                <strong id="completedOrders">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- MY ORDERS -->
+
+        <div
+            class="orders-box"
+            id="dashboardOrdersBox"
+        >
+
+            <h3>
+                My Orders
+            </h3>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                ID
+                            </th>
+
+                            <th>
+                                Service
+                            </th>
+
+                            <th>
+                                Quantity
+                            </th>
+
+                            <th>
+                                Price
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="ordersTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+        <!-- ================= MY PROFILE ================= -->
+
+<div
+    id="dashboardProfileBox"
+    class="dashboard-profile-box"
+    style="display:none;"
+>
+
+    <h3>👤 My Profile</h3>
+
+    <div class="profile-info">
+
+        <img
+            id="profilePhoto"
+            src=""
+            alt="Profile Photo"
+            class="profile-photo"
+        >
+
+        <div class="profile-details">
+
+            <p>
+                <strong>Name:</strong>
+                <span id="profileName"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="profileEmail"></span>
+            </p>
+
+            <p>
+                <strong>User ID:</strong>
+                <span id="profileUid"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= ADD MONEY ================= -->
+
+<div
+    id="walletBox"
+    class="wallet-box"
+    style="display:none;"
+>
+
+<!-- WALLET HEADER -->
+
+<div class="wallet-main">
+
+    <h3>💰 My Wallet</h3>
+
+    <p>
+        Available Balance:
+        <strong id="walletBalance">₹500.00</strong>
+    </p>
+
+    <button
+        class="add-money-btn"
+        onclick="openAddMoney()"
+    >
+        ➕ Add Money
+    </button>
+
+</div>
+
+<!-- ADD MONEY FORM -->
+
+<div
+    id="addMoneyForm"
+    style="display:none;"
+>
+
+
+    <h3>💰 Add Money</h3>
+
+    <p class="wallet-subtitle">
+        Add money to your SocialBoost wallet
+    </p>
+
+
+    <!-- AMOUNT -->
+
+    <label for="walletAmount">
+        Amount
+    </label>
+
+    <input
+        type="number"
+        id="walletAmount"
+        placeholder="Enter amount"
+        min="1"
+    >
+
+
+    <!-- PAY NOW -->
+
+    <button
+        class="wallet-pay-btn"
+        onclick="showPaymentOptions()"
+    >
+        💳 Pay Now
+    </button>
+
+
+    <!-- PAYMENT OPTIONS -->
+
+    <div
+        id="paymentOptions"
+        class="payment-options"
+        style="display:none;"
+    >
+
+        <h4>
+            Pay using UPI
+        </h4>
+
+        <!-- YOUR UPI ID -->
+
+        <div class="upi-info">
+
+            <span>
+                UPI ID
+            </span>
+
+            <strong>
+                pankaj1252@ptyes
+            </strong>
+
+        </div>
+
+
+        <!-- QR CODE -->
+
+        <div class="qr-section">
+
+            <p>
+                Scan QR & Pay
+            </p>
+
+           <div class="qr-placeholder">
+                <img
+                    src="qr-code.png"
+                    alt="UPI QR Code"
+                    class="upi-qr"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- UTR -->
+
+        <label for="walletUTR">
+            UTR / Transaction ID
+        </label>
+
+        <input
+            type="text"
+            id="walletUTR"
+            placeholder="Enter UTR / Transaction ID"
+        >
+
+
+        <button
+            class="submit-payment-btn"
+            onclick="submitWalletPayment()"
+        >
+            Submit Payment
+        </button>
+
+
+        <p
+            id="walletPaymentMessage"
+            class="wallet-payment-message"
+        ></p>
+
+    </div>
+
+</div>
+
+</div>
+
+        <!-- HELP -->
+
+        <div
+            id="dashboardHelpBox"
+            class="dashboard-help-box"
+        >
+
+            <h3>
+                🆘 Help & Support
+            </h3>
+
+            <p>
+                Need help with your order or account?
+            </p>
+
+            <p>
+                Please contact our support team.
+            </p>
+
+            <button
+                onclick="dashboardHelp()"
+            >
+                Contact Support
+            </button>
+
+        </div>
+
+
+    </main>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <h2>
+        About SocialBoost
+    </h2>
+
+    <p>
+        A simple social media marketing dashboard
+        for managing authorized marketing services.
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 SocialBoost. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
