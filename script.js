@@ -96,7 +96,7 @@ async function googleLogin() {
 
         try {
 
-            await fetch("http://localhost:5000/notify-login", {
+            await fetch(""https://smm-panel-ukkc.onrender.com/notify-login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
